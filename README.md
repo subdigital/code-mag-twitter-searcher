@@ -5,7 +5,7 @@ demonstrates common patterns when building iPhone applications.
 
 It addresses
 
-- - Asynchronous network programming using
+- Asynchronous network programming using
   [ASIHTTPRequest](http://github.com/pokeb/asi-http-request)
 - Integrating with a JSON web service (Twitter)
 - Parsing JSON into an NSDictionary
