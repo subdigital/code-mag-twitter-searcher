@@ -14,7 +14,11 @@ It addresses
 
 ## Usage
 
-All 3rd party libraries have been checked in
+All 3rd party libraries have been checked in and are ready to build.  Just download the code, open the project in Xcode 4, Build & Run.
+
+## iOS Version
+
+The project was built using iOS 4.3 SDK.  It leverages blocks and auto-backed properties, so has a minimum target level of 4.0.
 
 ## BSD License
 
