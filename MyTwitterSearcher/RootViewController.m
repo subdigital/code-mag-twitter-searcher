@@ -45,10 +45,12 @@
 
 - (void)saveSearch {
     NSString *searchTerm = self.searchBar.text;
-    //check for existing saved searches array
-    NSMutableArray *savedSearches = [[NSUserDefaults standardUserDefaults] objectForKey:@"saved_searches"];
-    if (savedSearches == nil) {
-        savedSearches = [NSMutableArray array];
+    // check for existing saved searches array, comes back as a standard NSArray, so we have to 
+    // create an intermediary array & then add it to our mutable instance
+    NSArray *existingItems = [[NSUserDefaults standardUserDefaults] objectForKey:@"saved_searches"];
+    NSMutableArray *savedSearches = [NSMutableArray array];
+    if (existingItems) {
+        [savedSearches addObjectsFromArray:existingItems];
     }
     
     //don't save the same search term twice
